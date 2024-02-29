@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 
-function ClienteScreen(): JSX.Element {
+function ProfissionalScreen(): JSX.Element {
 
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
-    function login() {
+    function Profissional() {
         const dados = {
             email: email,
             password: password,
@@ -26,7 +26,7 @@ function ClienteScreen(): JSX.Element {
 
 
             <View style={styles.card}>
-                <Text style={styles.tittle}>Cliente Login</Text>
+                <Text style={styles.tittle}>Cliente Profissional</Text>
 
 
                 <TextInput style={styles.input} placeholder="E-mail"
@@ -139,4 +139,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default ClienteScreen;
+export default ProfissionalScreen;

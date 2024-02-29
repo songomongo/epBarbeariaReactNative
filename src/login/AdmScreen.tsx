@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 
-function ClienteScreen(): JSX.Element {
+function AdmScreen(): JSX.Element {
 
 
     const [email, setEmail] = useState("")
@@ -26,7 +26,7 @@ function ClienteScreen(): JSX.Element {
 
 
             <View style={styles.card}>
-                <Text style={styles.tittle}>Cliente Login</Text>
+                <Text style={styles.tittle}>Cliente Adm</Text>
 
 
                 <TextInput style={styles.input} placeholder="E-mail"
@@ -139,4 +139,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default ClienteScreen;
+export default AdmScreen;
